@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    min-height: 100vh;      
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255,252,246);
+}
+
+.website-header{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: orange;
+}
+
+.search-section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(214, 214, 214, 0.5);
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-section .chosee-a-food{
+    width: 40%;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 10rem;
+    display: flex;
+    overflow: visible;
+}
+
+.search-section .chosee-a-food:focus{
+    outline: 3px solid rgb(255, 161, 19);
+}
+
+.search-section .add-food-item{
+    background-color: rgb(93, 198, 93);
+    border: 0;
+    border-radius: 4px;
+    color: rgb(36, 36, 36);
+    font-size: 1.1rem;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+.search-section .add-food-item:focus{
+    outline: 3px solid rgb(27, 127, 27);
+}
+
+
+.food-section{
+    box-shadow: 1px 1px 20px rgba(110, 110, 110, 0.21);
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.food-section .food-item{
+    width: 94%;
+    background-color: rgba(204, 216, 215, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    padding-inline: 4rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+
+.food-section .food-item:hover{
+    background-color: rgb(185,215,214);
+}
+
+.food-section .food-item .serving-size{
+    padding-left: 5rem;
+}
+
+.food-section .food-item .callorie-amount{
+    padding-right: 2rem;
+}
