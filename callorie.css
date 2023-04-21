@@ -35,7 +35,7 @@ body{
 .search-section{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     gap: 5rem;
@@ -77,28 +77,39 @@ body{
 .food-section{
     box-shadow: 1px 1px 20px rgba(110, 110, 110, 0.21);
     background-color: rgb(255, 255, 255);
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2rem;
     padding-bottom: 5rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     align-items: center;
 }
 
 .food-section .food-item{
-    width: 94%;
+    width: 100%;
     background-color: rgba(204, 216, 215, 0.5);
     display: flex;
     justify-content: space-between;
     padding: 0.7rem;
-    padding-inline: 4rem;
-    border-radius: 2rem;
-    font-size: 1.1rem;
+    padding-inline: 2rem;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.food-section .food-item:nth-child(2n){
+      background-color: rgba(255, 255, 255, 0.5);
+}
+
+.food-section .food-item .food-name{
+    text-transform: capitalize;
+    width: 30%;
+}
+
+.food-section .food-item .callorie-amount{
+    width: 60px;
 }
 
 .food-section .food-item:hover{
@@ -110,5 +121,5 @@ body{
 }
 
 .food-section .food-item .callorie-amount{
-    padding-right: 2rem;
+    padding-right: 5rem;
 }
